@@ -25,7 +25,6 @@ class Homepage(FormView):
             return reverse('filme:criarconta')
 
 
-
 class Homefilmes(LoginRequiredMixin, ListView):
     template_name = 'homefilmes.html'
     model = Filme
